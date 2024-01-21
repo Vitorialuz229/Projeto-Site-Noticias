@@ -1,33 +1,39 @@
-* { 
+/* Reset de margens e preenchimentos para todos os elementos */
+* {
   padding: 0;
   margin: 0;
 }
 
+/* Estilo global para o corpo do documento */
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background: #fff url(./img/fundo.png) repeat-x center;
 }
 
+/* Estilo do cabeçalho */
 header {
   width: 750px;
   margin: 0 auto;
 }
 
+/* Estilo da parte superior do site (topo) */
 .topo {
   height: 150px;
   background: url(./img/detalhe-topo.png) no-repeat right top;
-  padding-top:25px;
+  padding-top: 25px;
   border: 1px solid red;
 }
 
-.logo { 
+/* Estilo do logotipo */
+.logo {
   width: 152px;
   height: 66px;
   background: url(./img/logo.png) no-repeat center;
-  text-indent:-3000px;
+  /* Ocultar texto do logotipo */
+  text-indent: -3000px;
 }
 
-/* Barra de navegação */
+/* Estilo da barra de navegação */
 ul {
   margin: 0;
   padding: 0;
@@ -36,7 +42,8 @@ ul {
   width: 83%;
 }
 
-.topo ul { 
+/* Estilo específico para a barra de navegação no topo */
+.topo ul {
   margin-top: 20px;
   background: #b10333;
 }
@@ -47,26 +54,28 @@ ul {
   padding: 0.5em 1.4em;
   line-height: 2.1em;
   text-decoration: none;
-  color: #fff; 
+  color: #fff;
   background: url(./img/divisor.png) no-repeat left center;
 }
 
-.topo ul .primeiro a { 
+/* Estilo para o primeiro item da barra de navegação */
+.topo ul .primeiro a {
   background: none repeat scroll 0;
 }
 
+/* Estilo ao passar o mouse sobre os links da barra de navegação */
 .topo ul a:hover {
   color: #69001d;
 }
 
-body.home .navegacao a.home, 
-body.brasil .navegacao a.brasil, 
-body.internacional .navegacao a.internacional, 
-body.economia .navegacao a.economia, 
-body.saude .navegacao a.saude, 
-body.ciencia .navegacao a.ciencia, 
-body.fotos .navegacao a.fotos 
-{ 
+/* Estilos específicos para diferentes páginas do site */
+body.home .navegacao a.home,
+body.brasil .navegacao a.brasil,
+body.internacional .navegacao a.internacional,
+body.economia .navegacao a.economia,
+body.saude .navegacao a.saude,
+body.ciencia .navegacao a.ciencia,
+body.fotos .navegacao a.fotos {
   color: #fff;
   background: #de003e;
 }
