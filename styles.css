@@ -8,7 +8,6 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background: #fff url(./img/fundo2.png) repeat-x center top;
-  width: auto;
 }
 
 /* Estilo do cabeçalho */
@@ -19,7 +18,7 @@ header {
 
 /* Estilo da parte superior do site (topo) */
 .topo {
-  height: 160px;
+  height: 170px;
   background: url(./img/detalhe-topo.png) no-repeat right top;
   padding-top: 15px;
   padding-bottom: 30px;
@@ -34,13 +33,17 @@ header {
   text-indent: -3000px;
 }
 
-/* Estilo da barra de navegação */
+/* Estilização dos links*/
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
   width: 83%;
+}
+
+/* Estilo da barra de navegação */
+.navegacao { 
+  display: flex;
 }
 
 /* Estilo específico para a barra de navegação no topo */
@@ -84,53 +87,93 @@ body.fotos .navegacao a.fotos {
 /* Configura layout de três colunas */
 main { 
   background: #f5f5f5;
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 section { 
   width: 270px;
-  background: blue;
-  padding-left: 30px;
 }
 
 .secundario {
   width: 270px;
   background: green;
-  padding-left: 30px;
 }
 
 .lateral { 
-  width: 180px;
+  width: 250px;
 }
 
-/*Caixa*/
+/*Barra Lateral - caixa*/
 .caixa { 
   margin: 10px 0;
-  padding: 5px;
-  background: #f3f3f3 url(./img/fundo-caixa.png);
+  padding: 10px;
+  background: #f3f3f3 url(.img/fundo-caixa.png);
 }
 
-h2 {
-  font-size: 1.3em;
+h2 { 
   background: #294c71;
   color: #fff;
+  font-size: 1.8em;
   padding: 5px;
 }
 
 .caixa-conteudo { 
-  background: #ffff;
-  padding: 5px;
-  margin-top: 10px;
+  background: #fff;
+  padding: 10px;
 }
 
+.lateral { 
+  display: flex;
+  flex-direction: column;
+}
+
+/*Formatar menus laterais*/
+.lateral ul a { 
+  font-size: 0.9em;
+  padding: 3px;
+  display: block;
+  line-height: 30px;
+  color: #000; 
+  text-decoration: none;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.lateral ul a:hover { 
+  color: #a1a1a1;
+  background: #f9f9f9 url(./img/marcador.png) no-repeat left top center; 
+  padding-left: 20px;
+}
+
+.label { 
+  display: block;
+  cursor: pointer; 
+}
+
+input {
+  padding: 5px;
+  width: 125px;
+  font-size: 0.9em;
+  background-color: #fff;
+  display: block; 
+  margin-bottom: 10px;  
+}
+
+input.submit { 
+  width: 80px;
+  color: #fff;
+  background-color: #b10333;
+  border: 2px solid #870529;
+}
 
 /*Rodape*/
 footer { 
   background: #294c71;
   text-align: center;
   padding: 20px;
-  display: block;
 }
 
 .rodape { 
