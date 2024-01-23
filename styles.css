@@ -91,34 +91,36 @@ main {
   margin: 0 auto;
   padding-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 section { 
   width: 270px;
+  padding-right: 30px;
 }
 
 .secundario {
   width: 270px;
-  background: green;
+  padding-right: 10px;
 }
 
 .lateral { 
-  width: 250px;
+  width: 180px;
 }
 
 /*Barra Lateral - caixa*/
-.caixa { 
-  margin: 10px 0;
-  padding: 10px;
-  background: #f3f3f3 url(.img/fundo-caixa.png);
-}
 
 h2 { 
   background: #294c71;
   color: #fff;
   font-size: 1.8em;
   padding: 5px;
+  margin-bottom: 5px;
+}
+
+.caixa { 
+  padding: 10px 0 0 10px;
+  margin-top: 9px;
 }
 
 .caixa-conteudo { 
@@ -167,6 +169,30 @@ input.submit {
   color: #fff;
   background-color: #b10333;
   border: 2px solid #870529;
+}
+
+/*Formatando imagens*/
+
+img.imagem-principal { 
+  width: 98%;
+  border: 3px solid #dfdfdf;
+}
+
+/*Formatando os cabeçalhos*/
+h3 { 
+  text-transform: uppercase;  
+  display: inline;
+  font-size: 0.8em;
+  padding: 3px;
+}
+
+.destaque {
+  background: #b10333;
+  color: #fff;
+}
+
+.entrevista {
+  background: #de003e;
 }
 
 /*Rodape*/
