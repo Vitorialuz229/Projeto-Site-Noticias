@@ -192,6 +192,12 @@ h3 {
   color: #fff;
 }
 
+/*Formatação da lista de notícias*/
+.lista-noticias li{ 
+  padding: 2px;
+}
+
+
 /*Rodape*/
 footer { 
   background: #294c71;
