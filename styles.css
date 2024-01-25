@@ -91,41 +91,48 @@ main {
   margin: 0 auto;
   padding-top: 20px;
   display: flex;
-  justify-content: space-around;
 }
 
 section { 
   width: 270px;
-  padding-right: 30px;
+  padding: 10px;
 }
 
 .secundario {
   width: 270px;
-  padding-right: 10px;
+  padding: 10px;
 }
 
 .lateral { 
-  width: 180px;
+  width: 190px;
 }
 
 /*Barra Lateral - caixa*/
-
 h2 { 
   background: #294c71;
   color: #fff;
   font-size: 1.8em;
   padding: 5px;
-  margin-bottom: 5px;
 }
 
-.caixa { 
-  padding: 10px 0 0 10px;
-  margin-top: 9px;
+p { 
+  color: #000 !important;
+  font-weight: 100;
+}
+
+.caixa {
+  margin-bottom: 10px;
 }
 
 .caixa-conteudo { 
   background: #fff;
   padding: 10px;
+  margin-bottom: 10px;
+}
+
+.caixa-content { 
+  background: #fff;
+  padding-bottom: 5px;
 }
 
 .lateral { 
@@ -195,9 +202,32 @@ h3 {
 /*Formatação da lista de notícias*/
 .lista-noticias li{ 
   padding: 2px;
+  width: 280px;
+  height:60px;
 }
 
+.lista-noticias li a img { 
+ float: left; 
+ padding: 5px 4px;
+}
+.lista-noticias li a { 
+ text-decoration: none; 
+}
 
+.lista-noticias li a h3 { 
+  font-size: 0.8em;
+  padding: 0;
+  color: #3e7ab9;
+}
+
+.lista-noticias li a p { 
+  font-size: 0.6em;
+}
+
+.lista-noticias li:hover{ 
+  background: #eee;
+  cursor: pointer;
+}
 /*Rodape*/
 footer { 
   background: #294c71;

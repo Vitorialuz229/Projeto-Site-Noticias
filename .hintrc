@@ -8,6 +8,13 @@
       {
         "image-alt": "off"
       }
+    ],
+    "no-inline-styles": "off",
+    "axe/structure": [
+      "default",
+      {
+        "listitem": "off"
+      }
     ]
   }
 }
